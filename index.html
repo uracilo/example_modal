@@ -15,7 +15,7 @@
     
           <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Launch example:
+        Launch example
       </button>
 
       <!-- Modal -->
@@ -30,15 +30,14 @@
             </div>  
             <div class="modal-body">
               En caso de querer escuchar la grabación de la Conferencia Telefónica....
-              
+              <br/> <br/>
               <button class="btn btn-primary" onclick="myFunction()" id="fire">Click para escuchar la grabación</button>
+	
+		    
               <audio  id="show" style="visibility:hidden" controls style="width:100%">
                 <source src="track.mp3" type="audio/ogg">
                 Your browser does not support the audio element.
               </audio>
-
-
-
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -48,21 +47,19 @@
       </div>
     
     
-    <script type="text/javascript">
-    $(window).on('load', function() {
-        $('#staticBackdrop').modal('show');
-    });
-	    
-	    
-function myFunction()
-{
+	<script type="text/javascript">
+		$(window).on('load', function() {
+		$('#staticBackdrop').modal('show');
+		});
 
-document.getElementById("fire").style.visibility = 'hidden';
-document.getElementById("show").style.visibility = 'visible';
-}
+		function myFunction()
+		{
+		document.getElementById("fire").style.visibility = 'hidden';
+		document.getElementById("show").style.visibility = 'visible';
+		}
 
-</script> 
-    
+	</script> 
+
     
     
     <!-- Optional JavaScript; choose one of the two! -->
