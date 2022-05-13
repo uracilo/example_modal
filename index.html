@@ -19,24 +19,35 @@
         
       </button>
 
-  <!--notice-modal-2-->
-  <div id="staticBackdrop" class="modal-container bg_white d-none" >
-    <div class="modal-header p-sticky d-flex align-center justify-between bg_dark">
-      <h1 class="">Conferencia Telef&oacute;nica 1Q22</h1>
-      <a href="#notice-modal-2" class="ml-auto modal-close control control-white white" type="button" name="modal-close" aria-label="close modal" >
-        <i class="fi fi-btn_close_light" aria-hidden="true"></i>
-      </a>
-    </div>
-    <div class="p-relative dark nm_deco_1Q22">
-      <div class="row justify-center ">
-        <div class="col-12 col-lg-8">
-          <div class="wrapper px-3 py-5 text-center">&#13;&#10; <h1 class="h4 blue-dark mb-3">Escucha la conferencia telefónica <span class="d-block h2 orange">FUNO 1Q22</span>&#13;&#10; </h1>&#13;&#10; <p>En caso de querer escuchar la grabación de la Conferencia Telefónica de resultados FUNO 1Q22 del martes 3 de mayo de 2022, puedes hacerlo entrando a la siguiente liga:</p>&#13;&#10; </div>&#13;&#10; <div class="wrapper px-3 pb-9 text-center">&#13;&#10; <button type="button" name="button" class="btn medium fill-orange text-center mx-auto d-block" onclick="show_audio_1Q22(this)">Da clic aquí para escuchar la grabación</button>&#13;&#10; 
-          <audio id="1Q22" controls preload="none" class="d-block w-100 mx-auto d-none">&#13;&#10; <source src="track.mp3" type="audio/mpeg" />&#13;&#10; Your browser does not support the audio tag.&#13;&#10; </audio>&#13;&#10; </div>
+      <!-- Modal -->
+      <div class="modal fade modal-dialog modal-dialog-centered" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header p-sticky d-flex align-center justify-between bg_dark">
+              <h1 class="">Conferencia Telefónica 1Q22</h1>
+              <a href="#notice-modal-2" class="ml-auto modal-close control control-white white" type="button" name="modal-close" aria-label="close modal">
+                <i class="fi fi-btn_close_light" aria-hidden="true"></i>
+              </a>
+            </div>  
+            <div class="modal-body">
+              En caso de querer escuchar la grabación de la Conferencia Telefónica....
+              
+                      <audio controls="controls" class="d-block w-100 mx-auto d-none">
+                        <source src="track.mp3" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                      </audio>   
+              
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!--/notice-modal-2-->
+    
+    
     
     
     
