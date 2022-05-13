@@ -11,30 +11,33 @@
     <title>Hello, world!</title>
   </head>
   <body>
-
-    <h1>Hello, world!</h1>
-    
-        <audio controls="controls">
-          <source src="track.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>   
    
     
           <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Launch static backdrop modal
+        Launch example: 
+        
       </button>
 
       <!-- Modal -->
       <div class="modal fade modal-dialog modal-dialog-centered" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+            <div class="modal-header p-sticky d-flex align-center justify-between bg_dark">
+              <h1 class="">Conferencia Telefónica 1Q22</h1>
+              <a href="#notice-modal-2" class="ml-auto modal-close control control-white white" type="button" name="modal-close" aria-label="close modal">
+                <i class="fi fi-btn_close_light" aria-hidden="true"></i>
+              </a>
+            </div>  
             <div class="modal-body">
-              ...
+              En caso de querer escuchar la grabación de la Conferencia Telefónica....
+              
+                      <audio controls="controls" class="d-block w-100 mx-auto d-none">
+                        <source src="track.mp3" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                      </audio>   
+              
+
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
